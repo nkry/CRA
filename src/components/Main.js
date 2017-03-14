@@ -13,8 +13,13 @@ class Main extends Component {
   }
 
   render() {
+    const assetPath = this.props.assets
+
     return (
-      <div>Everything is working</div>
+      <div>
+        <div>Everything is working</div>
+        <img src={assetPath + 'test.jpg'} />
+      </div>
     )
   }
 

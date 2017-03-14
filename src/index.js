@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Router, Route, Link, hashHistory, browserHistory } from 'react-router'
-// import Main from './components/Main';
 import Main from './components/Main';
 import 'normalize-scss';
 import './styles/main.scss';
+const assets = process.env.PUBLIC_URL + '/assets/';
 
 ReactDOM.render(
-  <Main />,
+  <Main assets={assets} />,
   document.getElementById('root')
 );
