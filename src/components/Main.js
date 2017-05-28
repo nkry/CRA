@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import CounterContainer from './containers/counterContainer'
 
 class Main extends Component {
   constructor(props) {
@@ -13,16 +14,15 @@ class Main extends Component {
   }
 
   render() {
-    const assetPath = this.props.assets
+    const assetPath = this.props.route.assets
 
     return (
       <div>
-        <div>Everything is working</div>
+        <CounterContainer />
         <img src={assetPath + 'test.jpg'} />
       </div>
     )
   }
-
 }
 
-export default Main;
+export default Main
